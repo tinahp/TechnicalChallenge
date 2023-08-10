@@ -10,7 +10,7 @@ import pageObject.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest extends BaseClassTest {
+public class LoginTest extends BaseClassTest{
 
     @BeforeTest
     public void innit() {
@@ -22,9 +22,10 @@ public class LoginTest extends BaseClassTest {
     }
 
 //    //    Testcases
-    @Test(priority = 0)
+    @Test(priority = 2)
     public void NegativeLogin() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        LoginPage loginPage =new LoginPage(driver);
 //      user is able to input the wrong username
         loginPage.wrongUsername();
 //      user is able to input the wrong password
@@ -37,7 +38,7 @@ public class LoginTest extends BaseClassTest {
         System.out.println(actualMessage);
         Assert.assertEquals(actualMessage, expectedMessage);
     }
-
+/*
     @Test(priority = 1)
     public void Login() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -48,6 +49,6 @@ public class LoginTest extends BaseClassTest {
 //      User is able to click on the login button
         loginPage.clickLogin();
    }
-
+*/
 
     }

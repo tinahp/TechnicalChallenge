@@ -34,11 +34,11 @@ public class LoginPage {
     public String negativeCredential() {
         String negativeLogin1 = driver.findElement(credentials).getText();
         return negativeLogin1;
+
     }
 
-
+/*
 //       Locate the webElement/Positive Scenerio
-
 //  User should be able to input Username
     private By username = By.cssSelector("#user-name");
 //     User should be able to input Password
@@ -57,6 +57,6 @@ public class LoginPage {
         driver.findElement(login).click();
         driver.close();}
 
-
+*/
 
 }

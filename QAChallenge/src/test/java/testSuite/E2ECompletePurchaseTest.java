@@ -71,6 +71,9 @@ public class E2ECompletePurchaseTest extends BaseClassTest {
        System.out.println("https://www.saucedemo.com/checkout-complete.html");
 //     User is able to see the orderText displayed successfully
        completePurchase.completeOrderText();
+       Thread.sleep(3000);
+       completePurchase.cLogout();
+       Thread.sleep(1000);
 //     User is able to click on the backHome button to return to homePage
        completePurchase.clickBackHome();
 

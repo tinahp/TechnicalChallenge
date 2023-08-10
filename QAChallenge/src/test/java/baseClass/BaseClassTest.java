@@ -41,6 +41,6 @@ public class BaseClassTest {
         driver.get("https://www.saucedemo.com/");
 
         //Instantiate the page after launching the browser
-        loginPage=new LoginPage(driver);
+//        loginPage=new LoginPage(driver);
     }
 }

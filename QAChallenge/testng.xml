@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:\Users\Tizspec\IdeaProjects\QAChallenge">
+    <test verbose="2" preserve-order="true" name="C:\Users\Tizspec\Desktop\Challenge\TechnicalChallenge\QAChallenge">
         <classes>
-            <class name="testSuite.LoginTest"/>
-            <class name="testSuite.E2ECompletePurchaseTest">
+            <class name="testSuite.E2ECompletePurchaseTest"/>
+            <class name="testSuite.LoginTest">
 <!--                <methods>-->
 <!--&lt;!&ndash;                    <include name="e2eCompletePurchase"/>&ndash;&gt;-->
 <!--&lt;!&ndash;                    <exclude name="NegativeLogin"/>&ndash;&gt;-->
