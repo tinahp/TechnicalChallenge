@@ -26,18 +26,19 @@ public class E2ECompletePurchaseTest extends BaseClassTest {
     public void e2eCompletePurchase() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         CompletePurchase completePurchase =new CompletePurchase(driver);
-//      User is able to insert purchase username in the input Field
+
+//        User is able to insert purchase username in the input Field
         completePurchase.clickPUsername();
 //        User is able to insert purchase password in the input Field
         completePurchase.clickPPassword();
-//      User is able to click on the login button to proceed with the purchase
+//        User is able to click on the login button to proceed with the purchase
         completePurchase.clickPLogin();
         if (driver.getCurrentUrl().contains("https://www.saucedemo.com/inventory.html"))
            //Pass
          System.out.println("The page URl in the link field contains/inventory");
        else
           System.out.println("The page URl in the link field does not contains/inventory");
-       //Fail
+         //Fail
 //      User is able to click on the addCart button
        completePurchase.clickAddCart();
 //       User is able to verify the price of the bag
@@ -67,11 +68,12 @@ public class E2ECompletePurchaseTest extends BaseClassTest {
 //     Verify the orderMessage results displayed
        String expectedTitle = "https://www.saucedemo.com/checkout-complete.html";
        String actualTitle = driver.getCurrentUrl();
-        Assert.assertEquals(actualTitle, expectedTitle);
+       Assert.assertEquals(actualTitle, expectedTitle);
        System.out.println("https://www.saucedemo.com/checkout-complete.html");
 //     User is able to see the orderText displayed successfully
        completePurchase.completeOrderText();
        Thread.sleep(3000);
+//     User is able to click on the logOut button
        completePurchase.cLogout();
        Thread.sleep(1000);
 //     User is able to click on the backHome button to return to homePage

@@ -11,7 +11,7 @@ public class CompletePurchase {
         this.driver = driver;
     }
 
-//       Locate the webElement/Positive Scenerio
+//       Locate the webElement/Positive Scenario
 
     //     User should be able to input Username
     private By purchaseUsername = By.cssSelector("#user-name");
@@ -19,9 +19,9 @@ public class CompletePurchase {
     private By purchasePassword = By.cssSelector("#password");
     //     User should be able to see the login button
     private By purchaseLogin = By.cssSelector("#login-button");
-    //       User should be able to click on the addCart button
+    //     User should be able to click on the addCart button
     private By addCart = By.cssSelector("#add-to-cart-sauce-labs-backpack");
-    //       User should be able to verify the price of the bag
+    //     User should be able to verify the price of the bag
     private By verifyBag = By.cssSelector("div[class='inventory_list'] div:nth-child(1) div:nth-child(2) div:nth-child(2) div:nth-child(1)");
     //    User should be able to click on the second addCart button
     private By addCart2 = By.cssSelector("#add-to-cart-sauce-labs-bike-light");
@@ -144,6 +144,7 @@ public class CompletePurchase {
         return orderText;
     }
 
+     //   User is able to click on the logOut button
     public void cLogout() {
         driver.findElement(clickLogOut).click();
     }
